@@ -1,0 +1,372 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    background: rgb(26, 26, 26);
+    color: aliceblue;
+}
+
+.header {
+    background: rgb(26, 26, 26);
+    padding: 24px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 60px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+#search-bar {
+    height: 45px;
+    width: 500px;
+    background-color: grey;
+    border-radius: 12.5px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.search-bar ::placeholder {
+    color: aliceblue;
+}
+
+#search {
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+    border-radius: 15px;
+}
+
+#search:hover {
+    background-color: darkseagreen;
+    cursor: pointer;
+}
+
+#current-location {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+#current-location:hover {
+    background-color: darkmagenta;
+    cursor: pointer;
+}
+
+.level1 {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.now {
+    flex-grow: 1;
+    padding: 10px 20px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 25px;
+}
+
+#heading1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+}
+
+.Tempreature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#temp {
+    font-size: 40px;
+    margin: 0;
+}
+
+#current-img {
+    width: 150px;
+    margin: 0;
+}
+
+#current-condition,
+#location {
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+.today {
+    flex-grow: 3;
+    padding: 10px 20px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 25px;
+}
+
+#heading2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+}
+
+.quater {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.morning, .afternoon, .evening, .night {
+    text-align: center;
+}
+
+#morning-img, #afternoon-img, #evening-img, #night-img {
+    width: 100px;
+}
+
+#morning-temp, #afternoon-temp, #evening-temp, #night-temp,
+#morning-condition, #afternoon-condition, #evening-condition, #night-condition {
+    font-size: 20px;
+    text-align: center;
+}
+
+.level2 {
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.five-day {
+    border-radius: 25px;
+    flex-grow: 1;
+    padding: 10px 20px;
+    background-color: rgb(37, 37, 37);
+}
+
+#heading3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+.day1, .day2, .day3, .day4, .day5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.highlights {
+    border-radius: 25px;
+    flex-grow: 3;
+    padding: 10px 20px;
+    background-color: rgb(37, 37, 37);
+}
+
+#heading4 {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+}
+
+#sunrise, #sunset, #precipitation-image, #humidity-image, #wind-image {
+    width: 100px;
+}
+
+#precipitation-heading ,#humidity-heading, #wind-heading,#sun{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#precipitation ,#humidity, #wind{
+    text-align: center;
+    font-size: 20px;
+}
+
+#sunrise-time, #sunset-time{
+    font-size: 20px;
+}
+
+.sun, .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.sep-sunrise, .sep-sunset {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head {
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+    #search-bar {
+        width: 400px;
+    }
+
+    #current-location {
+        width: 120px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-bar {
+        width: 300px;
+    }
+
+    #search, #current-location {
+        width: 80px;
+    }
+
+    .level1, .level2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .now, .today, .five-day, .highlights {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    #search-bar {
+        width: 250px;
+    }
+
+    .Tempreature {
+        flex-direction: column;
+    }
+
+    #temp {
+        font-size: 30px;
+    }
+
+    #current-img {
+        width: 100px;
+    }
+
+    #current-condition, #location {
+        font-size: 25px;
+    }
+
+    .quater {
+        flex-direction: column;
+    }
+
+    #morning-img, #afternoon-img, #evening-img, #night-img {
+        width: 80px;
+    }
+
+    #morning-temp, #afternoon-temp, #evening-temp, #night-temp,
+    #morning-condition, #afternoon-condition, #evening-condition, #night-condition {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 12px;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #search-bar {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    #search, #current-location {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .level1, .level2 {
+        padding: 5px;
+    }
+
+    .now, .today, .five-day, .highlights {
+        padding: 5px;
+    }
+
+    .Tempreature {
+        gap: 5px;
+    }
+
+    #temp {
+        font-size: 25px;
+    }
+
+    #current-img {
+        width: 80px;
+    }
+
+    #current-condition, #location {
+        font-size: 20px;
+    }
+
+    #heading1, #heading2, #heading3, #heading4 {
+        font-size: 20px;
+    }
+
+    .quater {
+        gap: 5px;
+    }
+
+    #morning-img, #afternoon-img, #evening-img, #night-img {
+        width: 60px;
+    }
+
+    #morning-temp, #afternoon-temp, #evening-temp, #night-temp,
+    #morning-condition, #afternoon-condition, #evening-condition, #night-condition {
+        font-size: 16px;
+    }
+
+    .sep-sunrise, .sep-sunset {
+        gap: 10px;
+    }
+}

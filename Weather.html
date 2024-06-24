@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Weather</title>
+        <link rel="stylesheet" href="Weather.css">
+        <link rel="shortcut icon" href="Images/Favicon.png" type="image/.png">
+
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="nav">
+
+                <div class="logo">
+                    <img id="logo" src="Images/Logo.png">
+                </div>
+
+                <div class="form">
+
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search City ...." id="search-bar">
+                    </div>
+
+                    <div class="search">
+                        <button id="search">
+                            Search
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="current-location">
+
+                    <button id="current-location">
+                        Current Location
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="level1">
+            <div class="now">
+
+                <div class="heading1">
+                    <p id="heading1">Now</p>
+                </div>
+
+                <div class="Tempreature">
+                    <p id="temp"></p>
+                    <img src="" id="current-img">
+                </div>
+
+                <div class="condition-location">
+                    <p id="current-condition"></p>
+                    <p id="location"></p>
+                </div>
+
+            </div>
+            <div class="today">
+
+                <div class="heading2">
+                    <p id="heading2">Today</p>
+                </div>
+                <div class="quater">
+                    
+                    <div class="morning">
+                        <p class="head">Morning</p>
+                        <img src=" " id="morning-img">
+                        <p id="morning-temp"></p>
+                        <p id="morning-condition"></p>
+                    </div>
+
+                    <div class="afternoon">
+                        <p class="head">Afternoon</p>
+                        <img src=" " id="afternoon-img">
+                        <p id="afternoon-temp"></p>
+                        <p id="afternoon-condition"></p>
+                    </div>
+
+                    <div class="evening">
+                        <p class="head">Evening</p>
+                        <img src=" " id="evening-img">
+                        <p id="evening-temp"></p>
+                        <p id="evening-condition"></p>
+                    </div>
+
+                    <div class="night">
+                        <p class="head">Night</p>
+                        <img src=" " id="night-img">
+                        <p id="night-temp"></p>
+                        <p id="night-condition"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="level2">
+            <div class="five-day">
+
+                <div class="heading3">
+                    <p id="heading3">5 Days Forecast</p>
+                </div>
+
+                <div class="forecast">
+
+                    <div class="day1">
+                        <p id="date1"></p>
+                        <p id="day1"></p>
+                        <img src=" " id="day1-img">
+                        <p id="day1-temp"></p>
+                        <p id="day1-condition"></p>
+                    </div>
+
+                    <div class="day2">
+                        <p id="date2"></p>
+                        <p id="day2"></p>
+                        <img src=" " id="day2-img">
+                        <p id="day2-temp"></p>
+                        <p id="day2-condition"></p>
+                    </div>
+
+                    <div class="day3">
+                        <p id="date3"></p>
+                        <p id="day3"></p>
+                        <img src=" " id="day3-img">
+                        <p id="day3-temp"></p>
+                        <p id="day3-condition"></p>
+                    </div>
+
+                    <div class="day4">
+                        <p id="date4"></p>
+                        <p id="day4"></p>
+                        <img src=" " id="day4-img">
+                        <p id="day4-temp"></p>
+                        <p id="day4-condition"></p>
+                    </div>
+
+                    <div class="day5">
+                        <p id="date5"></p>
+                        <p id="day5"></p>
+                        <img src=" " id="day5-img">
+                        <p id="day5-temp"></p>
+                        <p id="day5-condition"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="highlights">
+
+                <div class="heading4">
+                    <p id="heading4">Today's highlights</p>
+                </div>
+                <div class="sun">
+
+                    <div class="sunrise">
+                        <p id="sun">sunrise</p>
+                        <div class="sep-sunrise">
+                            <img src="Images/Sunrise.png" id="sunrise">
+                            <p id="sunrise-time"></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="sunset">
+                        <p id="sun">sunset</p>
+                        <div class="sep-sunset">
+                            <img src="Images/moon.png" id="sunset">
+                            <p id="sunset-time"></p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="stats">
+                    <div class="precipitation">
+                        <p id="precipitation-heading">Precipitation</p>
+                        <img src="Images/precipitation.png" id="precipitation-image">
+                        <p id="precipitation"></p>
+                    </div>
+
+                    <div class="humidity">
+                        <p id="humidity-heading">Humidity</p>
+                        <img src="Images/humidity.png" id="humidity-image">
+                        <p id="humidity"></p>
+                    </div>
+
+                    <div class="wind">
+                        <p id="wind-heading">Wind</p>
+                        <img src="Images/wind.png" id="wind-image">
+                        <p id="wind"></p>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+    <script src="Weather.js"></script>
+    </body>
+</html>
